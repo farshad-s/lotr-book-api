@@ -4,3 +4,10 @@
   display: flex;
   justify-content: center;
 }
+
+.container {
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  margin: 5px;
+}
