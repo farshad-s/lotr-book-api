@@ -6,7 +6,12 @@ fetch("https://the-one-api.dev/v2/book")
       "https://cdn.waterstones.com/bookjackets/large/9780/2611/9780261103580.jpg",
       "https://cdn.waterstones.com/bookjackets/large/9780/2611/9780261103597.jpg",
     ];
-    for (let i = 0; i < data.docs.length; i++) {}
+    for (let i = 0; i < data.docs.length; i++) {
+      let eachItem = data.docs[i].name;
+      root.innerHTML += `<div class="container">
+
+    </div>`;
+    }
   })
   .catch((error) => {
     console.log("error is", error);
