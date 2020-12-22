@@ -9,7 +9,11 @@ fetch("https://the-one-api.dev/v2/book")
     for (let i = 0; i < data.docs.length; i++) {
       let eachItem = data.docs[i].name;
       root.innerHTML += `<div class="container">
-
+      <img
+        src="${bookPicArray[i]}"
+        class="image"
+      />
+      <h1>Part ${i + 1} - ${eachItem}</h1>
     </div>`;
     }
   })
